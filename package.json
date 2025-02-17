@@ -1,0 +1,12 @@
+{
+  "name": "shopware-openapi-splitter",
+  "module": "splitTags.ts",
+  "type": "module",
+  "devDependencies": {
+    "@redocly/cli": "^1.28.5",
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
