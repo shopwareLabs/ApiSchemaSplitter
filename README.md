@@ -2,9 +2,11 @@
 
 Yes, it sounds like a horror splatter movie. But we'll just split files for you! -- BrocksiNet
 
+⚠️ These are experimental bun runtime scripts ⚠️ Features will be moved to [api-gen](https://github.com/shopware/frontends/tree/main/packages/api-gen) package in the future.
+
 ## Why
 
-You want to import the admin API from your Shopware instance, but it fails because it has circular dependencies and is way too big a JSON file to import all endpoints at once. This bun script can help you split the admin API into smaller pieces (by path or tags) so you can decide what you want to import.
+You want to import the admin API from your Shopware instance, but it fails because it has circular dependencies and is way too big a JSON file to import all endpoints at once. This bun scripts can help you split the admin API into smaller pieces (by path or tags) so you can decide what you want to import.
 
 ## Initial set up
 
@@ -121,8 +123,6 @@ Workspace **>** Import Button **>** Select files from bundeled paths or tags **>
 ### Bruno
 
 Import Collection **>** OpenAPI V3 Spec **>** Select files from bundeled paths or tags **>** Select folder where you want to save the collection **>** Import
-
-_Note: Bruno sometimes has problems with identical collection names and cannot import if there are several identical collection names. Try renaming the collection, restart bruno and import the split/bundled file again._
 
 ## Ressources
 

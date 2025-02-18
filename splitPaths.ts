@@ -41,6 +41,7 @@ async function createSplitFilesForAdminGroupsByPath(
 
   for (const path in paths) {
     const filename = generateFilenameFromPath(path);
+    splitAdminApi.info.title = `${splitAdminApi.info.title} (${filename})`;
     const output = { ...splitAdminApi, paths: { [path]: paths[path] } };
     output.tags = undefined; // remove tags from the output
 

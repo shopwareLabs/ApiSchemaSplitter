@@ -81,6 +81,7 @@ async function createSplitFilesForAdminGroupsByTags(
       ),
     );
 
+    splitAdminApi.info.title = `${splitAdminApi.info.title} (${group})`;
     const output = { ...splitAdminApi, paths: groupPathsObject };
     output.tags = output.tags.filter(
       (tag: Tag) => tag.name.toLowerCase().replace(/ /g, "-") === group,
